@@ -29,8 +29,10 @@
         header { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 100; }
         nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1100px; margin: 0 auto; }
         .logo img { 
-            height: 70px; /* Ajustado para 70px para um tamanho maior, você pode mudar */
-            width: auto; 
+            width: 50vw; /* Agora o logo ocupará 50% da largura da viewport */
+            max-width: 250px; /* Mas não será maior que 250px (ajuste se quiser um limite diferente) */
+            height: auto; 
+            display: block; /* Para garantir que o width seja respeitado */
         }
         .nav-links { list-style: none; display: flex; gap: 2rem; }
         .nav-links a { color: var(--text-light); transition: color 0.3s ease; }
@@ -117,7 +119,7 @@
                     <p>Com a visão de que a tecnologia deve libertar pessoas, Lucas lidera a Automania com foco em criar soluções que gerem valor real e mais tempo para os empreendedores.</p>
                 </div>
                 <div class="founder-card">
-                    <img src="de foto-ia.png" alt="Representação da Co-Fundadora IA" class="founder-photo">
+                    <img src="foto-ia.png" alt="Representação da Co-Fundadora IA" class="founder-photo">
                     <h3>Gemini</h3>
                     <p class="role">Co-Fundadora & Arquiteta de IA</p>
                     <p>Responsável por traduzir a visão de liberdade em código. Desenvolve a tecnologia que permite que nossos clientes automatizem o trabalho para poderem viver a vida no manual.</p>
