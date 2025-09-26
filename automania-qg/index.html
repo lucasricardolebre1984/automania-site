@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automania AI - Soluções de Atendimento com Inteligência Artificial</title>
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap)" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-medium: #1a1a1a;
+            --text-light: #f0f0f0;
+            --text-medium: #a0a0a0;
+            --accent-blue: #007bff;
+            --accent-green: #28a745;
+            --border-color: #333;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-dark); color: var(--text-light); line-height: 1.7; }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 100px 20px; }
+        h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+        h2 { font-size: 2.8rem; margin-bottom: 2rem; text-align: center; }
+        h2 span { color: var(--accent-blue); }
+        p { color: var(--text-medium); margin-bottom: 1rem; }
+        a { color: var(--accent-blue); text-decoration: none; }
+        header { background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1100px; margin: 0 auto; }
+        .logo img { height: 40px; width: auto; }
+        .nav-links { list-style: none; display: flex; gap: 2rem; }
+        .nav-links a { color: var(--text-light); transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--accent-blue); }
+        #hero { min-height: 100vh; display: flex; align-items: center; text-align: center; }
+        #hero .container { padding-top: 120px; }
+        #hero h1 { font-size: 3.8rem; }
+        #hero p.slogan { font-size: 1.3rem; max-width: 800px; margin: 1.5rem auto 2.5rem auto; color: var(--text-light); font-weight: 600; }
+        .cta-button { background-color: var(--accent-blue); color: white; padding: 15px 35px; border-radius: 50px; font-weight: 600; display: inline-block; transition: transform 0.3s ease, background-color 0.3s ease; }
+        .cta-button:hover { background-color: #0056b3; transform: translateY(-3px); }
+        .section-bg { background-color: var(--bg-medium); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--bg-dark); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-color); text-align: left;}
+        .card h3 { color: var(--accent-blue); margin-bottom: 1rem; }
+        #portfolio .portfolio-item { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; text-align: left; }
+        .portfolio-item .description { padding-right: 2rem; }
+        .portfolio-item .visual-placeholder { background: #000; border-radius: 10px; width: 100%; height: 350px; display: flex; justify-content: center; align-items: center; font-style: italic; color: var(--text-medium); border: 2px dashed var(--border-color); text-align: center; padding: 1rem;}
+        #sobre .founders-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; align-items: center; text-align: center; }
+        .founder-card { text-align: center; }
+        .founder-photo { border-radius: 50%; width: 180px; height: 180px; object-fit: cover; margin-bottom: 1.5rem; border: 4px solid var(--border-color); }
+        .founder-card h3 { color: var(--text-light); margin-bottom: 0.5rem; }
+        .founder-card .role { color: var(--accent-blue); font-weight: 600; margin-bottom: 1rem; }
+        #contact { text-align: center; }
+        #contact p { max-width: 600px; margin: 0 auto 2rem auto; }
+        .contact-button { background-color: var(--accent-green); }
+        .contact-button:hover { background-color: #1f7a35; }
+        footer { text-align: center; padding: 2rem; background-color: var(--bg-medium); border-top: 1px solid var(--border-color); color: var(--text-medium); }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo Automania AI">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#solutions">Soluções</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Fundadores</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h1>Inteligência Artificial que Trabalha por Você</h1>
+            <p class="slogan">Nós automatizamos o complexo e facilitamos a sua vida, não importa qual o seu ramo de negócio.</p>
+            <a href="#solutions" class="cta-button">Conheça Nossas Soluções</a>
+        </div>
+    </section>
+    <section id="solutions" class="section-bg">
+        <div class="container">
+            <h2>Sua Empresa Operando no <span>Piloto Automático</span></h2>
+            <div class="grid">
+                <div class="card"><h3>💬 Atendimento 24/7</h3><p>Conectamos uma IA ao seu WhatsApp para garantir que nenhum cliente fique sem resposta, a qualquer hora do dia ou da noite.</p></div>
+                <div class="card"><h3>📈 Vendas e Agendamentos</h3><p>Nossos assistentes são treinados para vender seus produtos, agendar serviços e capturar todos os detalhes, transformando conversas em faturamento.</p></div>
+                <div class="card"><h3>🧠 Personalidade Única</h3><p>Criamos uma personalidade customizada para sua IA, garantindo que ela fale a língua da sua marca e encante seus clientes.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Veja nossa <span>IA em Ação</span></h2>
+            <div class="portfolio-item">
+                <div class="description">
+                    <h3>Case: Atendente para Pizzaria (AutomaniaWhats)</h3>
+                    <p><strong>O Desafio:</strong> Uma pizzaria de delivery perdia vendas nos horários de pico. O atendimento humano via WhatsApp era lento e incapaz de lidar com o volume, resultando em clientes frustrados e desistências.</p>
+                    <p><strong>A Solução:</strong> Implementamos o "Júlio", um assistente de IA com a tecnologia Gemini. Ele atende 100% dos clientes instantaneamente, anota pedidos complexos, realiza vendas adicionais de bebidas e entrega o pedido formatado em um painel em tempo real para o caixa.</p>
+                    <p><strong>O Resultado:</strong> Zero pedidos perdidos, aumento de 15% no ticket médio através de upsell e clientes elogiando a rapidez e a simpatia do "novo funcionário".</p>
+                </div>
+                <div class="visual-placeholder"><span>[Aqui entrará um vídeo curto mostrando a tela do celular e o painel do caixa recebendo o pedido em tempo real]</span></div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="section-bg">
+        <div class="container">
+            <h2>Onde a Visão Humana Encontra a <span>Velocidade da IA</span></h2>
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <img src="foto-lucas.jpg" alt="Foto do Fundador Lucas" class="founder-photo">
+                    <h3>Lucas Ricardo da Silva Lebre</h3>
+                    <p class="role">Fundador & Estrategista de Negócios</p>
+                    <p>Com a visão de que a tecnologia deve libertar pessoas, Lucas lidera a Automania com foco em criar soluções que gerem valor real e mais tempo para os empreendedores.</p>
+                </div>
+                <div class="founder-card">
+                    <img src="foto-ia.jpg" alt="Representação da Co-Fundadora IA" class="founder-photo">
+                    <h3>Gemini</h3>
+                    <p class="role">Co-Fundadora & Arquiteta de IA</p>
+                    <p>Responsável por traduzir a visão de liberdade em código. Desenvolve a tecnologia que permite que nossos clientes automatizem o trabalho para poderem viver a vida no manual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Pronto para <span>Facilitar a Sua Vida</span>?</h2>
+            <p>Vamos conversar. Entenderemos seu negócio e mostraremos como a Automania AI pode se tornar seu maior aliado no crescimento. A primeira consultoria é por nossa conta.</p>
+            <a href="[https://wa.me/5516981903443](https://wa.me/5516981903443)" class="cta-button contact-button" target="_blank">Falar com um Especialista no WhatsApp</a>
+        </div>
+    </section>
+    <footer>
+        <p><strong>AUTOMANIA AI INOVA SIMPLES (I.S.) - CNPJ: 62.813.839/0001-04</strong></p>
+        <p>&copy; 2025 Automania AI. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
